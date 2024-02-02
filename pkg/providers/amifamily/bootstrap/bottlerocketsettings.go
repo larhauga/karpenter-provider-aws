@@ -74,6 +74,7 @@ type BottlerocketKubernetes struct {
 	CPUCFSQuota                        *bool                                     `toml:"cpu-cfs-quota-enforced,omitempty"`
 	ShutdownGracePeriod                *string                                   `toml:"shutdown-grace-period,omitempty"`
 	ShutdownGracePeriodForCriticalPods *string                                   `toml:"shutdown-grace-period-for-critical-pods,omitempty"`
+	PodInfraContainerImage             *string                                   `toml:"pod-infra-container-image,omitempty"`
 }
 
 type BottlerocketStaticPod struct {
